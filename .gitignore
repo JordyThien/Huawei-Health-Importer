@@ -1,0 +1,39 @@
+# --- Personal health data: NEVER commit ----------------------------------
+HUAWEI_HEALTH_*/
+*.zip
+*.json.gz
+
+# --- Xcode build artifacts -----------------------------------------------
+HuaweiHealthImporter/build/
+DerivedData/
+*.xcworkspace/xcuserdata/
+*.xcodeproj/xcuserdata/
+*.xcodeproj/project.xcworkspace/xcuserdata/
+*.xcuserstate
+*.xcscmblueprint
+*.xccheckout
+*.moved-aside
+*.hmap
+*.ipa
+*.dSYM.zip
+*.dSYM
+
+# --- Swift Package Manager (none expected, but defensive) ----------------
+.swiftpm/
+.build/
+Packages/
+Package.resolved
+
+# --- OMC / Claude orchestration state ------------------------------------
+.omc/
+.claude/
+
+# --- macOS / editor noise ------------------------------------------------
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+*.swp
+*~
+.idea/
+.vscode/

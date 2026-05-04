@@ -1,0 +1,1 @@
+[{"appType": 1, "dataId": 0, "deviceCode": 100000002, "endTime": 1602675060000, "healthDataSource": 0, "mergedFlag": 0, "recordId": "FixtureHeartRateAAAAAAAAAA==", "samplePoints": [{"endTime": 1602675060000, "key": "DATA_POINT_DYNAMIC_HEARTRATE", "startTime": 1602675000000, "unit": "0", "value": "82.0"}], "startTime": 1602675000000, "timeZone": "+0200", "type": 7}]

@@ -1,0 +1,634 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		01B234EF32CBF46C43210284 /* HeartRateMapperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B301761A6EEB6A5879A5E2F2 /* HeartRateMapperTests.swift */; };
+		093F210A343113A2A53C7923 /* TimeZoneParserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31F34B17B47E136D664B6D50 /* TimeZoneParserTests.swift */; };
+		0B533A9906D7DC88FC91E6A2 /* ImportPipeline.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91CAD55E6D4BE82417517CD5 /* ImportPipeline.swift */; };
+		125A0E2DDFF004CB7081B1E7 /* HeartRateMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1484BB7C5476C9E113A9792C /* HeartRateMapper.swift */; };
+		12AA8888562DFB8DEE7E5D6E /* SleepMapperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B42BC013350BB5C8EB871B2 /* SleepMapperTests.swift */; };
+		1729F1C005CFFD69E7DA217F /* ImportSummaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E03FCA87FB200FD530E8A813 /* ImportSummaryView.swift */; };
+		1EA9C02CCFBF0E9F7F063E70 /* StepsCaloriesMapperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9348D96F037C068754D2819 /* StepsCaloriesMapperTests.swift */; };
+		378C54784DC76471DAF3DB6D /* DocumentPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7A20C825B76B284F7C39716 /* DocumentPicker.swift */; };
+		39626BB4C90A13730B8052B7 /* ImportProgress.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6A38D43DCA7B88B9AC6D2CC /* ImportProgress.swift */; };
+		3AFD5BEA0A1C270F9D101035 /* StatRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57E8856B3C0033C44E6C5F09 /* StatRow.swift */; };
+		3F883A186DF9DF2F4665B79B /* BloodOxygenMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF4F8AD9E054CDA10F25B79 /* BloodOxygenMapper.swift */; };
+		4E73610F393BF8924E0F4272 /* HuaweiSportBasicInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBBEAE701F5102DDE3CB13B7 /* HuaweiSportBasicInfo.swift */; };
+		554805AC287115FD5014BBC6 /* PermissionGateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4746A4DD9E5AB89629956BB7 /* PermissionGateView.swift */; };
+		583BF7DE5B7527F0FF72E4D4 /* ImportProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 157FB7813C9C83375CFC5FF2 /* ImportProgressView.swift */; };
+		618EDEB390C00AF54FFAF1F0 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33B16F530A39D54045278F97 /* WelcomeView.swift */; };
+		7C1B9A702FFC998CB2A86FAF /* ProgressBarRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DB1695F80763331A059E408 /* ProgressBarRow.swift */; };
+		8005329AD7DE07F59D613F82 /* BodyCompositionMapperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03415D07A53DFCC628058796 /* BodyCompositionMapperTests.swift */; };
+		82B29BC4BFF896466E87424A /* StepsCaloriesMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A870A05A865A418DFC3D153B /* StepsCaloriesMapper.swift */; };
+		84392D04C4B715D53B98A197 /* heartrate_sample.json in Resources */ = {isa = PBXBuildFile; fileRef = 14F583CA0E2210669E31AAAC /* heartrate_sample.json */; };
+		90F4A8D1AF49908F1E01B888 /* ImportViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA923E690A87AA7E07399215 /* ImportViewModel.swift */; };
+		941F2F8207CF869151689675 /* TimeZoneParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EA070688E3A4987053D1416 /* TimeZoneParser.swift */; };
+		A19A799CC254B1375402F2C1 /* HuaweiSportRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95C2CCE24D1543E175B45951 /* HuaweiSportRecord.swift */; };
+		A97863B40B991628EBA7718B /* ImportSummary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70449C931D1F8B2844A32C9F /* ImportSummary.swift */; };
+		AD96F0DB4E5438D9B3479BFE /* sleep_sample.json in Resources */ = {isa = PBXBuildFile; fileRef = B606071281245EE3BC6AE99C /* sleep_sample.json */; };
+		AFA2D4C20F2B3FC5FE7A8226 /* ImportError.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1AEC6D45D901FEA26236E4 /* ImportError.swift */; };
+		B01DE5F1639497FECCCD87DA /* HKAuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0B2683B1A2BFCE571892A0E /* HKAuthService.swift */; };
+		B3944DC72E19E1EBD356DE7A /* FixturesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 947E97ED6FDD3E3EB4769842 /* FixturesTests.swift */; };
+		B6A36D20610DB5F56BFF8BAD /* HKMapping.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC68E7EA6DDFC044746E275 /* HKMapping.swift */; };
+		BAA2CFCC94D32C34060BC458 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E63F4707F063E5D72E35D62 /* RootView.swift */; };
+		BF4EE1EA5FEC47F3E4F21960 /* HKWriteService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18469D6B521AE6F052FB5AFE /* HKWriteService.swift */; };
+		C21FBCBB4F6633C9C220433D /* sport_per_minute_sample.json in Resources */ = {isa = PBXBuildFile; fileRef = E062046ADBA66B8505BAC492 /* sport_per_minute_sample.json */; };
+		C32CA85DBFF4C0973C90EF9E /* weight_sample.json in Resources */ = {isa = PBXBuildFile; fileRef = D573812EA55FF2AB701029F3 /* weight_sample.json */; };
+		CE42B83C193FB4260B160A84 /* HuaweiRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = A305BA5D9EC8F47B222235BF /* HuaweiRecord.swift */; };
+		D69922A7452FAACF571E89C9 /* HuaweiSamplePoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2EE3B763AD9D07756D0497C /* HuaweiSamplePoint.swift */; };
+		DAF26FCCFF891152A7546D4F /* HuaweiHealthImporterApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9668012458F923221048C942 /* HuaweiHealthImporterApp.swift */; };
+		DB3612A3BCC97B7B742B7B36 /* HuaweiSleepStage.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0516CF555D11FEFF9535CE2 /* HuaweiSleepStage.swift */; };
+		DD4E3D5F7839EC5B0113AB87 /* SleepMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87B9CD2EEA6AC97B3D2C8C38 /* SleepMapper.swift */; };
+		E586CBA9C5F7555E1181B6D2 /* FolderEnumerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D8D6012017F7AFB7B8E758B /* FolderEnumerator.swift */; };
+		E5DEF0FB2CE16B1006308484 /* ParserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B56801258ACA551541E9A6C /* ParserService.swift */; };
+		F26632F07B4679595B63B85C /* BloodOxygenMapperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23B404C3B7A7368F0543B3B3 /* BloodOxygenMapperTests.swift */; };
+		F2C704F8D05632645B167437 /* HuaweiBodyComposition.swift in Sources */ = {isa = PBXBuildFile; fileRef = A249BE17C68F60A169FCD02D /* HuaweiBodyComposition.swift */; };
+		F4AAAD3C7C8C93BDE12D619D /* PlaceholderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E14408DD1A585DE1891CAE4A /* PlaceholderTests.swift */; };
+		FF5CA7EEA60DEAA301D688AC /* BodyCompositionMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 238AC32F44FF8E1379CAF9C7 /* BodyCompositionMapper.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		220939E3A052DF4B85FD19CB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8E275DE212B9DD6E135641D5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EA9F08FA69AFBEE35C97603E;
+			remoteInfo = HuaweiHealthImporter;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		03415D07A53DFCC628058796 /* BodyCompositionMapperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BodyCompositionMapperTests.swift; sourceTree = "<group>"; };
+		1484BB7C5476C9E113A9792C /* HeartRateMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeartRateMapper.swift; sourceTree = "<group>"; };
+		14F583CA0E2210669E31AAAC /* heartrate_sample.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = heartrate_sample.json; sourceTree = "<group>"; };
+		157FB7813C9C83375CFC5FF2 /* ImportProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImportProgressView.swift; sourceTree = "<group>"; };
+		18469D6B521AE6F052FB5AFE /* HKWriteService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HKWriteService.swift; sourceTree = "<group>"; };
+		238AC32F44FF8E1379CAF9C7 /* BodyCompositionMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BodyCompositionMapper.swift; sourceTree = "<group>"; };
+		23B404C3B7A7368F0543B3B3 /* BloodOxygenMapperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BloodOxygenMapperTests.swift; sourceTree = "<group>"; };
+		2E0CAF5F4C56605483690EB6 /* HuaweiHealthImporterTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = HuaweiHealthImporterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		31F34B17B47E136D664B6D50 /* TimeZoneParserTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeZoneParserTests.swift; sourceTree = "<group>"; };
+		33B16F530A39D54045278F97 /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
+		3EA070688E3A4987053D1416 /* TimeZoneParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeZoneParser.swift; sourceTree = "<group>"; };
+		4746A4DD9E5AB89629956BB7 /* PermissionGateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermissionGateView.swift; sourceTree = "<group>"; };
+		57E8856B3C0033C44E6C5F09 /* StatRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatRow.swift; sourceTree = "<group>"; };
+		6B56801258ACA551541E9A6C /* ParserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParserService.swift; sourceTree = "<group>"; };
+		6DB1695F80763331A059E408 /* ProgressBarRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressBarRow.swift; sourceTree = "<group>"; };
+		70449C931D1F8B2844A32C9F /* ImportSummary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImportSummary.swift; sourceTree = "<group>"; };
+		87B9CD2EEA6AC97B3D2C8C38 /* SleepMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SleepMapper.swift; sourceTree = "<group>"; };
+		8D8D6012017F7AFB7B8E758B /* FolderEnumerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FolderEnumerator.swift; sourceTree = "<group>"; };
+		8E63F4707F063E5D72E35D62 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
+		91CAD55E6D4BE82417517CD5 /* ImportPipeline.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImportPipeline.swift; sourceTree = "<group>"; };
+		947E97ED6FDD3E3EB4769842 /* FixturesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FixturesTests.swift; sourceTree = "<group>"; };
+		95C2CCE24D1543E175B45951 /* HuaweiSportRecord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HuaweiSportRecord.swift; sourceTree = "<group>"; };
+		9668012458F923221048C942 /* HuaweiHealthImporterApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HuaweiHealthImporterApp.swift; sourceTree = "<group>"; };
+		9B42BC013350BB5C8EB871B2 /* SleepMapperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SleepMapperTests.swift; sourceTree = "<group>"; };
+		A249BE17C68F60A169FCD02D /* HuaweiBodyComposition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HuaweiBodyComposition.swift; sourceTree = "<group>"; };
+		A2EE3B763AD9D07756D0497C /* HuaweiSamplePoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HuaweiSamplePoint.swift; sourceTree = "<group>"; };
+		A305BA5D9EC8F47B222235BF /* HuaweiRecord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HuaweiRecord.swift; sourceTree = "<group>"; };
+		A870A05A865A418DFC3D153B /* StepsCaloriesMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepsCaloriesMapper.swift; sourceTree = "<group>"; };
+		B301761A6EEB6A5879A5E2F2 /* HeartRateMapperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeartRateMapperTests.swift; sourceTree = "<group>"; };
+		B606071281245EE3BC6AE99C /* sleep_sample.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = sleep_sample.json; sourceTree = "<group>"; };
+		C6015FEB2472BABF38B13E07 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		CE1AEC6D45D901FEA26236E4 /* ImportError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImportError.swift; sourceTree = "<group>"; };
+		CFF4F8AD9E054CDA10F25B79 /* BloodOxygenMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BloodOxygenMapper.swift; sourceTree = "<group>"; };
+		D0516CF555D11FEFF9535CE2 /* HuaweiSleepStage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HuaweiSleepStage.swift; sourceTree = "<group>"; };
+		D573812EA55FF2AB701029F3 /* weight_sample.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = weight_sample.json; sourceTree = "<group>"; };
+		D7A20C825B76B284F7C39716 /* DocumentPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentPicker.swift; sourceTree = "<group>"; };
+		DA923E690A87AA7E07399215 /* ImportViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImportViewModel.swift; sourceTree = "<group>"; };
+		DBBEAE701F5102DDE3CB13B7 /* HuaweiSportBasicInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HuaweiSportBasicInfo.swift; sourceTree = "<group>"; };
+		DCC68E7EA6DDFC044746E275 /* HKMapping.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HKMapping.swift; sourceTree = "<group>"; };
+		E03FCA87FB200FD530E8A813 /* ImportSummaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImportSummaryView.swift; sourceTree = "<group>"; };
+		E062046ADBA66B8505BAC492 /* sport_per_minute_sample.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = sport_per_minute_sample.json; sourceTree = "<group>"; };
+		E0B2683B1A2BFCE571892A0E /* HKAuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HKAuthService.swift; sourceTree = "<group>"; };
+		E14408DD1A585DE1891CAE4A /* PlaceholderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceholderTests.swift; sourceTree = "<group>"; };
+		E6A38D43DCA7B88B9AC6D2CC /* ImportProgress.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImportProgress.swift; sourceTree = "<group>"; };
+		E9348D96F037C068754D2819 /* StepsCaloriesMapperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepsCaloriesMapperTests.swift; sourceTree = "<group>"; };
+		E955DEF7B295B88A60A9CF3D /* HuaweiHealthImporter.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = HuaweiHealthImporter.app; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		025C6D80B7F5382566A41A81 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				8D8D6012017F7AFB7B8E758B /* FolderEnumerator.swift */,
+				E0B2683B1A2BFCE571892A0E /* HKAuthService.swift */,
+				18469D6B521AE6F052FB5AFE /* HKWriteService.swift */,
+				91CAD55E6D4BE82417517CD5 /* ImportPipeline.swift */,
+				6B56801258ACA551541E9A6C /* ParserService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		0B241AFF21F99CF14848B6B4 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				E6A38D43DCA7B88B9AC6D2CC /* ImportProgress.swift */,
+				DA923E690A87AA7E07399215 /* ImportViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		0D887DBA89B319849227490F /* HuaweiHealthImporterTests */ = {
+			isa = PBXGroup;
+			children = (
+				23B404C3B7A7368F0543B3B3 /* BloodOxygenMapperTests.swift */,
+				03415D07A53DFCC628058796 /* BodyCompositionMapperTests.swift */,
+				947E97ED6FDD3E3EB4769842 /* FixturesTests.swift */,
+				B301761A6EEB6A5879A5E2F2 /* HeartRateMapperTests.swift */,
+				E14408DD1A585DE1891CAE4A /* PlaceholderTests.swift */,
+				9B42BC013350BB5C8EB871B2 /* SleepMapperTests.swift */,
+				E9348D96F037C068754D2819 /* StepsCaloriesMapperTests.swift */,
+				31F34B17B47E136D664B6D50 /* TimeZoneParserTests.swift */,
+				B0B7B27FE16C67CD563BDC00 /* Resources */,
+			);
+			path = HuaweiHealthImporterTests;
+			sourceTree = "<group>";
+		};
+		20B2A3B5F2A2032BCFC13978 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A249BE17C68F60A169FCD02D /* HuaweiBodyComposition.swift */,
+				A305BA5D9EC8F47B222235BF /* HuaweiRecord.swift */,
+				A2EE3B763AD9D07756D0497C /* HuaweiSamplePoint.swift */,
+				D0516CF555D11FEFF9535CE2 /* HuaweiSleepStage.swift */,
+				DBBEAE701F5102DDE3CB13B7 /* HuaweiSportBasicInfo.swift */,
+				95C2CCE24D1543E175B45951 /* HuaweiSportRecord.swift */,
+				CE1AEC6D45D901FEA26236E4 /* ImportError.swift */,
+				70449C931D1F8B2844A32C9F /* ImportSummary.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		2A46B694D2779F8D65D64F7F = {
+			isa = PBXGroup;
+			children = (
+				E0AFC4628A21A05CF2B5C6CB /* HuaweiHealthImporter */,
+				0D887DBA89B319849227490F /* HuaweiHealthImporterTests */,
+				8A08DC71094B27334D339F6E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8750401A1A8890D1B8F51B8B /* Mappers */ = {
+			isa = PBXGroup;
+			children = (
+				CFF4F8AD9E054CDA10F25B79 /* BloodOxygenMapper.swift */,
+				238AC32F44FF8E1379CAF9C7 /* BodyCompositionMapper.swift */,
+				1484BB7C5476C9E113A9792C /* HeartRateMapper.swift */,
+				DCC68E7EA6DDFC044746E275 /* HKMapping.swift */,
+				87B9CD2EEA6AC97B3D2C8C38 /* SleepMapper.swift */,
+				A870A05A865A418DFC3D153B /* StepsCaloriesMapper.swift */,
+				3EA070688E3A4987053D1416 /* TimeZoneParser.swift */,
+			);
+			path = Mappers;
+			sourceTree = "<group>";
+		};
+		8A08DC71094B27334D339F6E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E955DEF7B295B88A60A9CF3D /* HuaweiHealthImporter.app */,
+				2E0CAF5F4C56605483690EB6 /* HuaweiHealthImporterTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A956FA8B457D8518658254F6 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D7A20C825B76B284F7C39716 /* DocumentPicker.swift */,
+				157FB7813C9C83375CFC5FF2 /* ImportProgressView.swift */,
+				E03FCA87FB200FD530E8A813 /* ImportSummaryView.swift */,
+				4746A4DD9E5AB89629956BB7 /* PermissionGateView.swift */,
+				8E63F4707F063E5D72E35D62 /* RootView.swift */,
+				33B16F530A39D54045278F97 /* WelcomeView.swift */,
+				FA46B26A2101B07C4A01CB8F /* Components */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		B0B7B27FE16C67CD563BDC00 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				14F583CA0E2210669E31AAAC /* heartrate_sample.json */,
+				B606071281245EE3BC6AE99C /* sleep_sample.json */,
+				E062046ADBA66B8505BAC492 /* sport_per_minute_sample.json */,
+				D573812EA55FF2AB701029F3 /* weight_sample.json */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		E0AFC4628A21A05CF2B5C6CB /* HuaweiHealthImporter */ = {
+			isa = PBXGroup;
+			children = (
+				9668012458F923221048C942 /* HuaweiHealthImporterApp.swift */,
+				C6015FEB2472BABF38B13E07 /* Info.plist */,
+				8750401A1A8890D1B8F51B8B /* Mappers */,
+				20B2A3B5F2A2032BCFC13978 /* Models */,
+				025C6D80B7F5382566A41A81 /* Services */,
+				0B241AFF21F99CF14848B6B4 /* ViewModels */,
+				A956FA8B457D8518658254F6 /* Views */,
+			);
+			path = HuaweiHealthImporter;
+			sourceTree = "<group>";
+		};
+		FA46B26A2101B07C4A01CB8F /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				6DB1695F80763331A059E408 /* ProgressBarRow.swift */,
+				57E8856B3C0033C44E6C5F09 /* StatRow.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B4DC9381D62D4B8455F21234 /* HuaweiHealthImporterTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D4568604E117DBFB92316DD2 /* Build configuration list for PBXNativeTarget "HuaweiHealthImporterTests" */;
+			buildPhases = (
+				3E8C051426DB0EFC2C77BFD4 /* Sources */,
+				ACE13BE4BB100BEB832C2501 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C89E6B0DC37B2CDDB1019DA3 /* PBXTargetDependency */,
+			);
+			name = HuaweiHealthImporterTests;
+			packageProductDependencies = (
+			);
+			productName = HuaweiHealthImporterTests;
+			productReference = 2E0CAF5F4C56605483690EB6 /* HuaweiHealthImporterTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		EA9F08FA69AFBEE35C97603E /* HuaweiHealthImporter */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CAFCB9EF33F68A81696EA5DF /* Build configuration list for PBXNativeTarget "HuaweiHealthImporter" */;
+			buildPhases = (
+				0A8DA14819912685D2547472 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HuaweiHealthImporter;
+			packageProductDependencies = (
+			);
+			productName = HuaweiHealthImporter;
+			productReference = E955DEF7B295B88A60A9CF3D /* HuaweiHealthImporter.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8E275DE212B9DD6E135641D5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					EA9F08FA69AFBEE35C97603E = {
+						DevelopmentTeam = "";
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = C69CF4D5C4B6CB35898A42E4 /* Build configuration list for PBXProject "HuaweiHealthImporter" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 2A46B694D2779F8D65D64F7F;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EA9F08FA69AFBEE35C97603E /* HuaweiHealthImporter */,
+				B4DC9381D62D4B8455F21234 /* HuaweiHealthImporterTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		ACE13BE4BB100BEB832C2501 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84392D04C4B715D53B98A197 /* heartrate_sample.json in Resources */,
+				AD96F0DB4E5438D9B3479BFE /* sleep_sample.json in Resources */,
+				C21FBCBB4F6633C9C220433D /* sport_per_minute_sample.json in Resources */,
+				C32CA85DBFF4C0973C90EF9E /* weight_sample.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0A8DA14819912685D2547472 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F883A186DF9DF2F4665B79B /* BloodOxygenMapper.swift in Sources */,
+				FF5CA7EEA60DEAA301D688AC /* BodyCompositionMapper.swift in Sources */,
+				378C54784DC76471DAF3DB6D /* DocumentPicker.swift in Sources */,
+				E586CBA9C5F7555E1181B6D2 /* FolderEnumerator.swift in Sources */,
+				B01DE5F1639497FECCCD87DA /* HKAuthService.swift in Sources */,
+				B6A36D20610DB5F56BFF8BAD /* HKMapping.swift in Sources */,
+				BF4EE1EA5FEC47F3E4F21960 /* HKWriteService.swift in Sources */,
+				125A0E2DDFF004CB7081B1E7 /* HeartRateMapper.swift in Sources */,
+				F2C704F8D05632645B167437 /* HuaweiBodyComposition.swift in Sources */,
+				DAF26FCCFF891152A7546D4F /* HuaweiHealthImporterApp.swift in Sources */,
+				CE42B83C193FB4260B160A84 /* HuaweiRecord.swift in Sources */,
+				D69922A7452FAACF571E89C9 /* HuaweiSamplePoint.swift in Sources */,
+				DB3612A3BCC97B7B742B7B36 /* HuaweiSleepStage.swift in Sources */,
+				4E73610F393BF8924E0F4272 /* HuaweiSportBasicInfo.swift in Sources */,
+				A19A799CC254B1375402F2C1 /* HuaweiSportRecord.swift in Sources */,
+				AFA2D4C20F2B3FC5FE7A8226 /* ImportError.swift in Sources */,
+				0B533A9906D7DC88FC91E6A2 /* ImportPipeline.swift in Sources */,
+				39626BB4C90A13730B8052B7 /* ImportProgress.swift in Sources */,
+				583BF7DE5B7527F0FF72E4D4 /* ImportProgressView.swift in Sources */,
+				A97863B40B991628EBA7718B /* ImportSummary.swift in Sources */,
+				1729F1C005CFFD69E7DA217F /* ImportSummaryView.swift in Sources */,
+				90F4A8D1AF49908F1E01B888 /* ImportViewModel.swift in Sources */,
+				E5DEF0FB2CE16B1006308484 /* ParserService.swift in Sources */,
+				554805AC287115FD5014BBC6 /* PermissionGateView.swift in Sources */,
+				7C1B9A702FFC998CB2A86FAF /* ProgressBarRow.swift in Sources */,
+				BAA2CFCC94D32C34060BC458 /* RootView.swift in Sources */,
+				DD4E3D5F7839EC5B0113AB87 /* SleepMapper.swift in Sources */,
+				3AFD5BEA0A1C270F9D101035 /* StatRow.swift in Sources */,
+				82B29BC4BFF896466E87424A /* StepsCaloriesMapper.swift in Sources */,
+				941F2F8207CF869151689675 /* TimeZoneParser.swift in Sources */,
+				618EDEB390C00AF54FFAF1F0 /* WelcomeView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3E8C051426DB0EFC2C77BFD4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F26632F07B4679595B63B85C /* BloodOxygenMapperTests.swift in Sources */,
+				8005329AD7DE07F59D613F82 /* BodyCompositionMapperTests.swift in Sources */,
+				B3944DC72E19E1EBD356DE7A /* FixturesTests.swift in Sources */,
+				01B234EF32CBF46C43210284 /* HeartRateMapperTests.swift in Sources */,
+				F4AAAD3C7C8C93BDE12D619D /* PlaceholderTests.swift in Sources */,
+				12AA8888562DFB8DEE7E5D6E /* SleepMapperTests.swift in Sources */,
+				1EA9C02CCFBF0E9F7F063E70 /* StepsCaloriesMapperTests.swift in Sources */,
+				093F210A343113A2A53C7923 /* TimeZoneParserTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C89E6B0DC37B2CDDB1019DA3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EA9F08FA69AFBEE35C97603E /* HuaweiHealthImporter */;
+			targetProxy = 220939E3A052DF4B85FD19CB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		437489671B31DF6863DF90D1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				CODE_SIGN_ENTITLEMENTS = HuaweiHealthImporter/HuaweiHealthImporter.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = HuaweiHealthImporter/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.HuaweiHealthImporter;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.9;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		46F7F785F3A7AF4EF68EFEB6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.HuaweiHealthImporterTests;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.9;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HuaweiHealthImporter.app/HuaweiHealthImporter";
+			};
+			name = Debug;
+		};
+		52DE7C9B5845AC3A08BF049E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				CODE_SIGN_ENTITLEMENTS = HuaweiHealthImporter/HuaweiHealthImporter.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = HuaweiHealthImporter/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.HuaweiHealthImporter;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.9;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		82E2F33711E1579E4374AF79 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.9;
+			};
+			name = Debug;
+		};
+		C3B02229A17A0D0C99324087 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.9;
+			};
+			name = Release;
+		};
+		CD59666BB20481B3D8D89AEF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.HuaweiHealthImporterTests;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.9;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HuaweiHealthImporter.app/HuaweiHealthImporter";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C69CF4D5C4B6CB35898A42E4 /* Build configuration list for PBXProject "HuaweiHealthImporter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				82E2F33711E1579E4374AF79 /* Debug */,
+				C3B02229A17A0D0C99324087 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		CAFCB9EF33F68A81696EA5DF /* Build configuration list for PBXNativeTarget "HuaweiHealthImporter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				52DE7C9B5845AC3A08BF049E /* Debug */,
+				437489671B31DF6863DF90D1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		D4568604E117DBFB92316DD2 /* Build configuration list for PBXNativeTarget "HuaweiHealthImporterTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				46F7F785F3A7AF4EF68EFEB6 /* Debug */,
+				CD59666BB20481B3D8D89AEF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8E275DE212B9DD6E135641D5 /* Project object */;
+}

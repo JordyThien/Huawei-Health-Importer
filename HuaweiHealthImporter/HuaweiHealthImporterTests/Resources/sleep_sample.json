@@ -1,0 +1,1 @@
+[{"appType": 1, "dataId": 0, "deviceCode": 100000002, "endTime": 1603232820000, "healthDataSource": 0, "mergedFlag": 0, "recordId": "FixtureSleepAAAAAAAAAAAAAA==", "samplePoints": [{"endTime": 1603232820000, "key": "PROFESSIONAL_SLEEP_SHALLOW", "startTime": 1603232760000, "unit": "0", "value": ""}], "startTime": 1603232760000, "timeZone": "+0200", "type": 9}]
