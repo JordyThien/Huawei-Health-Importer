@@ -16,19 +16,19 @@ struct ImportSummary {
     var elapsedSeconds: TimeInterval = 0
     var errors: [String] = []
 
-    /// Human-readable type display names.
+    /// Human-readable type display names keyed by HKSampleType.identifier.
     static let displayName: [String: String] = [
-        "heartRate":              "Heart Rate",
-        "oxygenSaturation":       "Blood Oxygen",
-        "bodyMass":               "Weight",
-        "bodyFatPercentage":      "Body Fat %",
-        "bodyMassIndex":          "BMI",
-        "leanBodyMass":           "Lean Body Mass",
-        "height":                 "Height",
-        "stepCount":              "Steps",
-        "distanceWalkingRunning": "Distance",
-        "activeEnergyBurned":     "Active Energy",
-        "sleepAnalysis":          "Sleep",
+        "HKQuantityTypeIdentifierHeartRate":              "Heart Rate",
+        "HKQuantityTypeIdentifierOxygenSaturation":       "Blood Oxygen",
+        "HKQuantityTypeIdentifierBodyMass":               "Weight",
+        "HKQuantityTypeIdentifierBodyFatPercentage":      "Body Fat %",
+        "HKQuantityTypeIdentifierBodyMassIndex":          "BMI",
+        "HKQuantityTypeIdentifierLeanBodyMass":           "Lean Body Mass",
+        "HKQuantityTypeIdentifierHeight":                 "Height",
+        "HKQuantityTypeIdentifierStepCount":              "Steps",
+        "HKQuantityTypeIdentifierDistanceWalkingRunning": "Distance",
+        "HKQuantityTypeIdentifierActiveEnergyBurned":     "Active Energy",
+        "HKCategoryTypeIdentifierSleepAnalysis":          "Sleep",
     ]
 
     mutating func record(typeId: String, parsed: Int = 0, written: Int = 0, skipped: Int = 0, failed: Int = 0) {

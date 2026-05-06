@@ -2,6 +2,9 @@
 HUAWEI_HEALTH_*/
 *.zip
 *.json.gz
+apk_decompiled/
+*.plist
+
 
 # --- Xcode build artifacts -----------------------------------------------
 HuaweiHealthImporter/build/

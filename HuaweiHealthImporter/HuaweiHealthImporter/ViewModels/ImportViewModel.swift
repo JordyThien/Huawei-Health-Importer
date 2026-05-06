@@ -96,9 +96,37 @@ final class ImportViewModel: ObservableObject {
         phase = .welcome
     }
 
-    /// Exports the current log as a plain-text string (for UIActivityViewController).
+    /// Exports the import summary as a plain-text string (for UIActivityViewController).
     func exportLog() -> String {
-        progress.logTail.joined(separator: "\n")
+        var lines: [String] = []
+
+        lines.append("Huawei Health Import Report")
+        lines.append("Date: \(Date().formatted(date: .long, time: .shortened))")
+
+        if let s = summary {
+            lines.append(String(format: "Duration: %.1f seconds", s.elapsedSeconds))
+            lines.append("Files processed: \(s.totalFilesProcessed)")
+            lines.append("")
+            lines.append("Results by type:")
+
+            let sorted = s.statsByType.values.sorted { $0.typeName < $1.typeName }
+            for stats in sorted {
+                lines.append("  \(stats.typeName): \(stats.written) written, \(stats.skippedDuplicate) skipped, \(stats.failed) failed")
+            }
+
+            lines.append("")
+            lines.append("Totals: \(progress.written) written, \(progress.skippedDuplicate) skipped, \(progress.failed) failed")
+
+            if !s.errors.isEmpty {
+                lines.append("")
+                lines.append("Errors:")
+                s.errors.forEach { lines.append("  \($0)") }
+            }
+        } else if !progress.logTail.isEmpty {
+            lines.append(contentsOf: progress.logTail)
+        }
+
+        return lines.joined(separator: "\n")
     }
 }
 
