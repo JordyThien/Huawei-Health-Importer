@@ -23,14 +23,15 @@ actor ImportPipeline {
 
     // MARK: - Public
 
-    /// Runs the full import from `folder`. Returns a completed `ImportSummary`.
+    /// Runs the full import from `folder`, with an optional CH100 scale CSV. Returns a completed `ImportSummary`.
     func run(folder: URL,
+             csvURL: URL? = nil,
              calorieDivisor: Double = 10.0) async -> ImportSummary {
         StepsCaloriesMapper.calorieDivisor = calorieDivisor
 
         let files = enumerator.enumerate(folder: folder)
         var progress = ImportProgress()
-        progress.filesTotal = files.filter { $0.kind != .unknown }.count
+        progress.filesTotal = files.filter { $0.kind != .unknown }.count + (csvURL != nil ? 1 : 0)
         emit(progress)
 
         var summary = ImportSummary()
@@ -55,10 +56,61 @@ actor ImportPipeline {
             emit(progress)
         }
 
+        if let csvURL {
+            await processCSV(url: csvURL, progress: &progress, summary: &summary)
+            progress.filesCompleted += 1
+            emit(progress)
+        }
+
         summary.totalFilesProcessed = progress.filesCompleted
         summary.elapsedSeconds = Date().timeIntervalSince(startTime)
         summary.errors = Array(progress.logTail.filter { $0.hasPrefix("Error") })
         return summary
+    }
+
+    // MARK: - CH100 scale CSV
+
+    private func processCSV(url: URL,
+                            progress: inout ImportProgress,
+                            summary: inout ImportSummary) async {
+        progress.currentFileName = url.lastPathComponent
+        emit(progress)
+
+        let rows: [CH100Row]
+        do {
+            rows = try CH100CSVParser.parse(url: url)
+        } catch {
+            progress.appendLog("Error parsing \(url.lastPathComponent): \(error)")
+            emit(progress)
+            return
+        }
+
+        var samplesByType: [String: [HKSample]] = [:]
+        for row in rows {
+            let samples = CH100BodyCompositionMapper.samples(from: row)
+            for s in samples {
+                samplesByType[s.sampleType.identifier, default: []].append(s)
+            }
+            progress.parsed += samples.count
+        }
+
+        for (typeId, samples) in samplesByType {
+            guard !Task.isCancelled else { return }
+            do {
+                let (written, skipped) = try await writer.deduplicateAndSave(
+                    samples: samples,
+                    progressHandler: { _, _ in }
+                )
+                progress.written += written
+                progress.skippedDuplicate += skipped
+                summary.record(typeId: typeId, parsed: samples.count, written: written, skipped: skipped)
+            } catch {
+                progress.failed += samples.count
+                progress.appendLog("Error writing scale \(typeId): \(error)")
+                summary.record(typeId: typeId, failed: samples.count)
+            }
+            emit(progress)
+        }
     }
 
     // MARK: - Health detail files

@@ -18,6 +18,7 @@ final class ImportViewModel: ObservableObject {
 
     @Published var phase: ImportPhase = .welcome
     @Published var pickedFolder: URL?
+    @Published var pickedCSVFile: URL?
     @Published var progress: ImportProgress = .empty
     @Published var summary: ImportSummary?
     @Published var lastError: ImportError?
@@ -35,6 +36,10 @@ final class ImportViewModel: ObservableObject {
     }
 
     // MARK: - User actions
+
+    func pickCSVFile(_ url: URL) {
+        pickedCSVFile = url
+    }
 
     /// Called when the user picks a folder from the document picker.
     func pickFolder(_ url: URL) {
@@ -57,11 +62,14 @@ final class ImportViewModel: ObservableObject {
 
     /// Kicks off the import pipeline on a background Task.
     func startImport() {
-        guard let folder = pickedFolder else { return }
+        guard pickedFolder != nil || pickedCSVFile != nil else { return }
+        // Use a temp directory as a no-op folder when only a CSV is selected
+        let folder = pickedFolder ?? FileManager.default.temporaryDirectory
         phase = .importing
         progress = .empty
         summary = nil
 
+        let csvURL = pickedCSVFile
         importTask = Task {
             let pipeline = ImportPipeline(store: store)
             await pipeline.setProgressHandler { [weak self] prog in
@@ -70,7 +78,7 @@ final class ImportViewModel: ObservableObject {
                 }
             }
 
-            let result = await pipeline.run(folder: folder, calorieDivisor: calorieDivisor)
+            let result = await pipeline.run(folder: folder, csvURL: csvURL, calorieDivisor: calorieDivisor)
             await MainActor.run { [weak self] in
                 self?.summary = result
                 self?.phase = .summary
@@ -90,6 +98,7 @@ final class ImportViewModel: ObservableObject {
         importTask?.cancel()
         importTask = nil
         pickedFolder = nil
+        pickedCSVFile = nil
         progress = .empty
         summary = nil
         lastError = nil

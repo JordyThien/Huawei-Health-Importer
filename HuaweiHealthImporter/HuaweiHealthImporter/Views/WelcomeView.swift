@@ -1,8 +1,13 @@
 import SwiftUI
 
+private enum ActivePicker: String, Identifiable {
+    case folder, csv
+    var id: String { rawValue }
+}
+
 struct WelcomeView: View {
     @EnvironmentObject var vm: ImportViewModel
-    @State private var showPicker = false
+    @State private var activePicker: ActivePicker?
 
     var body: some View {
         ScrollView {
@@ -42,7 +47,42 @@ struct WelcomeView: View {
                         }
 
                         Button("Choose Huawei Export Folder…") {
-                            showPicker = true
+                            activePicker = .folder
+                        }
+                        .buttonStyle(.bordered)
+                    }
+                    .frame(maxWidth: .infinity, alignment: .leading)
+                }
+
+                // CH100 scale CSV (optional)
+                GroupBox {
+                    VStack(alignment: .leading, spacing: 12) {
+                        Label("Scale CSV (optional)", systemImage: "scalemass")
+                            .font(.headline)
+                        Text("Import body composition history from the decrypted CH100 scale database.")
+                            .font(.caption)
+                            .foregroundStyle(.secondary)
+
+                        if let url = vm.pickedCSVFile {
+                            HStack {
+                                Image(systemName: "checkmark.circle.fill").foregroundStyle(.green)
+                                Text(url.lastPathComponent)
+                                    .font(.subheadline)
+                                    .lineLimit(1)
+                                    .truncationMode(.middle)
+                                Spacer()
+                                Button("Clear") { vm.pickedCSVFile = nil }
+                                    .font(.caption)
+                                    .foregroundStyle(.secondary)
+                            }
+                        } else {
+                            Text("No file selected")
+                                .font(.subheadline)
+                                .foregroundStyle(.secondary)
+                        }
+
+                        Button("Choose bodyfat_export.csv…") {
+                            activePicker = .csv
                         }
                         .buttonStyle(.bordered)
                     }
@@ -76,7 +116,7 @@ struct WelcomeView: View {
                 }
                 .buttonStyle(.borderedProminent)
                 .controlSize(.large)
-                .disabled(vm.pickedFolder == nil)
+                .disabled(vm.pickedFolder == nil && vm.pickedCSVFile == nil)
 
                 // Privacy note
                 VStack(spacing: 4) {
@@ -91,10 +131,18 @@ struct WelcomeView: View {
             }
             .padding()
         }
-        .sheet(isPresented: $showPicker) {
-            DocumentPicker { url in
-                vm.pickFolder(url)
-                showPicker = false
+        .sheet(item: $activePicker) { picker in
+            switch picker {
+            case .folder:
+                DocumentPicker { url in
+                    vm.pickFolder(url)
+                    activePicker = nil
+                }
+            case .csv:
+                FilePicker(contentTypes: [.data]) { url in
+                    vm.pickCSVFile(url)
+                    activePicker = nil
+                }
             }
         }
     }

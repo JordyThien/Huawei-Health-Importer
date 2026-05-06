@@ -20,16 +20,20 @@
 		3F883A186DF9DF2F4665B79B /* BloodOxygenMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF4F8AD9E054CDA10F25B79 /* BloodOxygenMapper.swift */; };
 		4E73610F393BF8924E0F4272 /* HuaweiSportBasicInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBBEAE701F5102DDE3CB13B7 /* HuaweiSportBasicInfo.swift */; };
 		554805AC287115FD5014BBC6 /* PermissionGateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4746A4DD9E5AB89629956BB7 /* PermissionGateView.swift */; };
+		56E70A4044D449BF81935FC3 /* CH100BodyCompositionMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5364A3D1C61ED9301617EE0D /* CH100BodyCompositionMapper.swift */; };
 		583BF7DE5B7527F0FF72E4D4 /* ImportProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 157FB7813C9C83375CFC5FF2 /* ImportProgressView.swift */; };
 		618EDEB390C00AF54FFAF1F0 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33B16F530A39D54045278F97 /* WelcomeView.swift */; };
 		7C1B9A702FFC998CB2A86FAF /* ProgressBarRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DB1695F80763331A059E408 /* ProgressBarRow.swift */; };
 		8005329AD7DE07F59D613F82 /* BodyCompositionMapperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03415D07A53DFCC628058796 /* BodyCompositionMapperTests.swift */; };
 		82B29BC4BFF896466E87424A /* StepsCaloriesMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A870A05A865A418DFC3D153B /* StepsCaloriesMapper.swift */; };
 		84392D04C4B715D53B98A197 /* heartrate_sample.json in Resources */ = {isa = PBXBuildFile; fileRef = 14F583CA0E2210669E31AAAC /* heartrate_sample.json */; };
+		90987823D7C68E66A2907776 /* CH100Row.swift in Sources */ = {isa = PBXBuildFile; fileRef = 671C1F0E44F3739BFC783BA5 /* CH100Row.swift */; };
 		90F4A8D1AF49908F1E01B888 /* ImportViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA923E690A87AA7E07399215 /* ImportViewModel.swift */; };
 		941F2F8207CF869151689675 /* TimeZoneParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EA070688E3A4987053D1416 /* TimeZoneParser.swift */; };
+		98FA27C4255C53D287BA378E /* CH100CSVParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5F2EC0986995B1419B7CE75 /* CH100CSVParser.swift */; };
 		A19A799CC254B1375402F2C1 /* HuaweiSportRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95C2CCE24D1543E175B45951 /* HuaweiSportRecord.swift */; };
 		A97863B40B991628EBA7718B /* ImportSummary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70449C931D1F8B2844A32C9F /* ImportSummary.swift */; };
+		A9C3DFDB7F9A8DFDCBB04A42 /* FilePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = C710064B3AE8C05CDC515836 /* FilePicker.swift */; };
 		AD96F0DB4E5438D9B3479BFE /* sleep_sample.json in Resources */ = {isa = PBXBuildFile; fileRef = B606071281245EE3BC6AE99C /* sleep_sample.json */; };
 		AFA2D4C20F2B3FC5FE7A8226 /* ImportError.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1AEC6D45D901FEA26236E4 /* ImportError.swift */; };
 		B01DE5F1639497FECCCD87DA /* HKAuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0B2683B1A2BFCE571892A0E /* HKAuthService.swift */; };
@@ -75,7 +79,9 @@
 		33B16F530A39D54045278F97 /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
 		3EA070688E3A4987053D1416 /* TimeZoneParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeZoneParser.swift; sourceTree = "<group>"; };
 		4746A4DD9E5AB89629956BB7 /* PermissionGateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermissionGateView.swift; sourceTree = "<group>"; };
+		5364A3D1C61ED9301617EE0D /* CH100BodyCompositionMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CH100BodyCompositionMapper.swift; sourceTree = "<group>"; };
 		57E8856B3C0033C44E6C5F09 /* StatRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatRow.swift; sourceTree = "<group>"; };
+		671C1F0E44F3739BFC783BA5 /* CH100Row.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CH100Row.swift; sourceTree = "<group>"; };
 		6B56801258ACA551541E9A6C /* ParserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParserService.swift; sourceTree = "<group>"; };
 		6DB1695F80763331A059E408 /* ProgressBarRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressBarRow.swift; sourceTree = "<group>"; };
 		70449C931D1F8B2844A32C9F /* ImportSummary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImportSummary.swift; sourceTree = "<group>"; };
@@ -94,10 +100,12 @@
 		B301761A6EEB6A5879A5E2F2 /* HeartRateMapperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeartRateMapperTests.swift; sourceTree = "<group>"; };
 		B606071281245EE3BC6AE99C /* sleep_sample.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = sleep_sample.json; sourceTree = "<group>"; };
 		C6015FEB2472BABF38B13E07 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		C710064B3AE8C05CDC515836 /* FilePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilePicker.swift; sourceTree = "<group>"; };
 		CE1AEC6D45D901FEA26236E4 /* ImportError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImportError.swift; sourceTree = "<group>"; };
 		CFF4F8AD9E054CDA10F25B79 /* BloodOxygenMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BloodOxygenMapper.swift; sourceTree = "<group>"; };
 		D0516CF555D11FEFF9535CE2 /* HuaweiSleepStage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HuaweiSleepStage.swift; sourceTree = "<group>"; };
 		D573812EA55FF2AB701029F3 /* weight_sample.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = weight_sample.json; sourceTree = "<group>"; };
+		D5F2EC0986995B1419B7CE75 /* CH100CSVParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CH100CSVParser.swift; sourceTree = "<group>"; };
 		D7A20C825B76B284F7C39716 /* DocumentPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentPicker.swift; sourceTree = "<group>"; };
 		DA923E690A87AA7E07399215 /* ImportViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImportViewModel.swift; sourceTree = "<group>"; };
 		DBBEAE701F5102DDE3CB13B7 /* HuaweiSportBasicInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HuaweiSportBasicInfo.swift; sourceTree = "<group>"; };
@@ -115,6 +123,7 @@
 		025C6D80B7F5382566A41A81 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				D5F2EC0986995B1419B7CE75 /* CH100CSVParser.swift */,
 				8D8D6012017F7AFB7B8E758B /* FolderEnumerator.swift */,
 				E0B2683B1A2BFCE571892A0E /* HKAuthService.swift */,
 				18469D6B521AE6F052FB5AFE /* HKWriteService.swift */,
@@ -152,6 +161,7 @@
 		20B2A3B5F2A2032BCFC13978 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				671C1F0E44F3739BFC783BA5 /* CH100Row.swift */,
 				A249BE17C68F60A169FCD02D /* HuaweiBodyComposition.swift */,
 				A305BA5D9EC8F47B222235BF /* HuaweiRecord.swift */,
 				A2EE3B763AD9D07756D0497C /* HuaweiSamplePoint.swift */,
@@ -178,6 +188,7 @@
 			children = (
 				CFF4F8AD9E054CDA10F25B79 /* BloodOxygenMapper.swift */,
 				238AC32F44FF8E1379CAF9C7 /* BodyCompositionMapper.swift */,
+				5364A3D1C61ED9301617EE0D /* CH100BodyCompositionMapper.swift */,
 				1484BB7C5476C9E113A9792C /* HeartRateMapper.swift */,
 				DCC68E7EA6DDFC044746E275 /* HKMapping.swift */,
 				87B9CD2EEA6AC97B3D2C8C38 /* SleepMapper.swift */,
@@ -200,6 +211,7 @@
 			isa = PBXGroup;
 			children = (
 				D7A20C825B76B284F7C39716 /* DocumentPicker.swift */,
+				C710064B3AE8C05CDC515836 /* FilePicker.swift */,
 				157FB7813C9C83375CFC5FF2 /* ImportProgressView.swift */,
 				E03FCA87FB200FD530E8A813 /* ImportSummaryView.swift */,
 				4746A4DD9E5AB89629956BB7 /* PermissionGateView.swift */,
@@ -337,7 +349,11 @@
 			files = (
 				3F883A186DF9DF2F4665B79B /* BloodOxygenMapper.swift in Sources */,
 				FF5CA7EEA60DEAA301D688AC /* BodyCompositionMapper.swift in Sources */,
+				56E70A4044D449BF81935FC3 /* CH100BodyCompositionMapper.swift in Sources */,
+				98FA27C4255C53D287BA378E /* CH100CSVParser.swift in Sources */,
+				90987823D7C68E66A2907776 /* CH100Row.swift in Sources */,
 				378C54784DC76471DAF3DB6D /* DocumentPicker.swift in Sources */,
+				A9C3DFDB7F9A8DFDCBB04A42 /* FilePicker.swift in Sources */,
 				E586CBA9C5F7555E1181B6D2 /* FolderEnumerator.swift in Sources */,
 				B01DE5F1639497FECCCD87DA /* HKAuthService.swift in Sources */,
 				B6A36D20610DB5F56BFF8BAD /* HKMapping.swift in Sources */,
